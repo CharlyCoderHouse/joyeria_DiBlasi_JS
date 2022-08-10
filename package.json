@@ -1,0 +1,25 @@
+{
+  "name": "joyeria_diblasi_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlyCoderHouse/joyeria_DiBlasi_JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlyCoderHouse/joyeria_DiBlasi_JS/issues"
+  },
+  "homepage": "https://github.com/CharlyCoderHouse/joyeria_DiBlasi_JS#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
