@@ -1,0 +1,348 @@
+
+  /* CAJA CON IMAGEN Y ANIMACION */
+  .portadaImagen {
+    background-image: url("../img/rosa_perlas.jpg");
+    background-size: cover;
+    height: calc(100vh - 100px);
+  }
+  
+  /* CAJA ANIMADA */
+  .cajaAnimada {
+    border-top: 2px solid $color_titulos;
+    border-radius: 4px;
+    height: 250px;
+    width: 500px;
+    margin: 30px;
+    position: absolute;
+    /* Centramos de forma simple */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: burlywood;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 10px;
+    opacity: 90%;
+    max-width: 90%;
+    
+    h2 {
+      color:$color_titulos;
+      font-weight: bold;
+    }
+    p {
+      font-style: italic;
+      font-size: 20px;
+    }
+  }
+  
+  /* Formato para botón Contacto */
+  .botones {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    color: #fff;
+    background-image: linear-gradient(to right, $color_headers, $color_titulos);
+  
+    &:hover {
+      transform: translateY(-3px);
+      transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+      /* Cubic-bezier = Es la curva de tiempo que usan todas las transiciones CSS */
+    }
+  
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+  
+  /* Formato al main */
+  main {
+    padding: 20px 5px 10px 5px;
+  }
+  
+  /* Seccion del Index */
+  .seccionInfo {
+    @include seccionInex;
+  }
+  
+  /* Seccion del Index */
+  .seccionInfo2 {
+    @include seccionInex;
+    flex-direction: row-reverse;
+  }
+  
+  /* Formato a los textos */
+  .textoIndex {
+    width: 75%;
+    margin: 10px;
+    text-align: justify;
+    align-content: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: #353535;
+    padding: 5px;
+  }
+  
+  /* Formato a los textos */
+  .texto {
+    width: 95%;
+    margin: 20px;
+    font-family: 'Indie Flower', cursive;
+    text-align: justify;
+    align-content: center;
+    font-size: 28px;
+    color: #353535;
+    padding: 5px;
+  }
+  
+  /* formato a todas las imagenes de productos */
+  .fotoProductos {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+  }
+  
+  .cajaFoto {
+    height: auto;
+    width: 400px;
+    margin: 5px;
+  }
+  
+  .fotos {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+  }
+  
+  /* Estilo PAGE QUIEN_SOMOS */
+  /* Le doy el ancho al formulario de contacto */
+  .mainSomos {
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .historiaSomos {
+    margin: 10px;
+  }
+  
+  .videos {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: $color_titulos solid 1px;
+    box-shadow: 3px 3px 10px $color_titulos;
+    border-radius: 1rem;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  
+    div {
+      margin: 10px;
+    }
+  }
+  
+  /* Estilo PAGE PROMOCION */
+  .cajaProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: max-available;
+    margin: 15px;
+    border: 1px solid $color_titulos;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px $color_titulos;
+  }
+  
+  /* CAJAS PRODUCTOS BOOTSTRAP */
+
+  .card {
+    background: transparent;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    border: 0;
+    border-radius: 1rem;
+
+    h5 {
+      overflow: hidden;
+      height: 56px;
+      font-weight: 900;
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    }
+  }
+
+  .card-img, .card-img-top {
+    border-top-left-radius: calc(1rem - 1px);
+    border-top-right-radius: calc(1rem - 1px);
+  }
+
+  .card-img-top {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .label-top {
+    position: absolute;
+    background-color: #8bc34a;color: #fff;
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px 5px 10px;
+    font-size: .7rem;
+    font-weight: 600;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    background: #ff5722;
+    line-height: 90px;
+    text-align: center;
+    color: white; 
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+ 
+  }
+
+  .clearfix {
+
+    span {
+      font-family: $estilo_fuente2;
+      font-size: 1rem;
+      font-weight: 900;
+  
+    }
+  
+  }
+  
+  .modal-title {
+    font-size: 2rem;
+    font-weight: 900;
+  } 
+
+  .modal-body p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .btn {
+    font-weight: 900;
+  }
+
+  .secTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilo PAGE PROMOCION */
+  .secAnillos, .secRelojes, .secAccesorios, .secMarroqui {
+    padding: 10px;
+  }
+  
+  /* Estilo PAGE CONTACTO */
+  /* Le doy el ancho al formulario de contacto */
+  #contacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color_titulos;
+    border-radius: 4px;
+    padding: 10px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 60vw;
+    }
+  }
+  
+  .campo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+  
+    &:focus {
+      box-shadow: 3px 3px 10px $color_titulos;
+    }
+  }
+  
+  .campoAlto:focus {
+    height: 60px;
+  }
+  
+  .botonesInput {
+    padding: 5px;
+  }
+
+  .botonContacto {
+    width: 150px;
+    max-width: 90%;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .seccionUbicacion {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    div p {
+      text-align: center;
+    }
+  }
+  
+  .cajaMap {
+    width: 100%;
+    max-width: 560px;
+    height: 415px;
+    max-height: 415px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }

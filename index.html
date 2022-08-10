@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripcion de la página -->
+    <meta name="description" content="Bienvenidos a nuestra Tienda Virtual Joyería PUGA, desde la ciudad de Azul les acercamos lo mejor en Anillos y relojes. 
+                ¡ Entra, conocenos y te invitamos a consultarnos, que con mucho gusto vamos a asesorarte !">
+    <!-- El titulo cambia con cada entrega -->
+    <title>Joyería PUGA - Proyecto Final</title>
+    <!-- Logo de la empresa -->
+    <link rel="shortcut icon" href="img/Logo_Puga.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Hoja de estilo propia-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- AGREGO LINKS PARA ANIMACIONES INDEX Y CONTACTO -->
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5e96413f29.js" crossorigin="anonymous"></script>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Encabezado con boostrap -->
+    <header>
+        <nav class="navbar navbar-expand-md colNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="imgLogo" src="img/Logo_Puga.png"
+                        alt="Joyeria_Puga"></a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active fuentesNav" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="pages/quien_somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="pages/promocion.html">Promociones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fuentesNav" href="pages/productos.html"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu subMenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Anillo">Anillos</a>
+                                </li>
+                                <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Relojes">Relojes</a>
+                                </li>
+                                <li><a class="dropdown-item fuentesNav"
+                                        href="pages/productos.html#Accesorios">Accesorios</a></li>
+                                <li><a class="dropdown-item fuentesNav"
+                                        href="pages/productos.html#Marroquineria">Marroquinería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="pages/contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mainIndexGrid">
+        <!-- Carousel Bootstrap -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="8000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/F100026172.jpg" class="d-block w-100" alt="anillos_relojes">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1><strong>Joyería Puga</strong></h1>
+                        <h4>Donde encontraras ese regalo especial, con el mejor asesoramiento.</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/F100013335.jpg" class="d-block w-100" alt="anillos_casamiento">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Promociones</h2>
+                        <h4>Conocé nuestras ofertas para cada ocación</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/piedras_collar.jpg" class="d-block w-100" alt="piedas_collares">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Queres conocernos?</h2>
+                        <h4>Escribinos y nos ponemos en contacto.</h4>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Dos secciones una de información -->
+        <section class="seccionInfo">
+            <nav class="textoIndex">
+                <h2 class="titulos">Bienvenidos a nuestra Tienda On-Line</h2>
+                <p>Nuestro objetivo es acercarte todas las ofertas, productos de nuestra Joyería y Relojería. En esta
+                    tienda podrás conocer quienes estamos detrás del mostrador, como trabajamos, las novedades de
+                    nuestras promociones, consejos de que regalar en cada evento especial, recorrer todos nuestros
+                    productos y porque no, regalarte eso que siempre quisiste.
+                    Cualquier consulta o asesoramiento no dudes en preguntarnos, dejamos abierto el canal de contacto y
+                    nuestro Whastapp!</p>
+                <p>Renovamos el agradecimiento por visitarnos!</p>
+            </nav>
+            <div class="cajaFoto">
+                <img class="fotos img-fluid" src="img/anillos_puga.jpg" alt="Joyeria_Puga_anillos">
+            </div>
+        </section>
+        <section class="seccionInfo2">
+            <nav class="textoIndex">
+                <h2 class="titulos">Nuestra tienda de siempre</h2>
+                <p>Como hace 40 años, podes encontrarnos en la ciudad de Azul, en pleno centro comercial y a metros de
+                    la plaza San Martín.
+                    No solo encontraras los mejores productos de joyería, relojería, marroquinería y cuchillos
+                    personalizados, sino también la mejor atención
+                    y predisposición para que tu compra sea más que una compra, sea un momento especial.
+                </p>
+                <p> Te esperamos ! </p>
+            </nav>
+            <div class="cajaFoto">
+                <img class="fotos img-fluid" src="img/local_frente.jpeg" alt="Joyeria_Puga_Local">
+            </div>
+        </section>
+    </main>
+
+    <div class="botonWhatsApp">
+        <img src="img/logoWhatsapp.png" alt="Boton_Whatsapp">
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-black footerProyecto" style="background-color: transparent">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">
+                            Joyería y Relojería PUGA
+                        </h5>
+                        <p>
+                            Articulos de Joyería, Relojería, Marroquinería, Cuchillos, Mates y Bombillas. Diseños de
+                            Joyas exclusivos!!! Te esperamos !
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+                        <p><i class="fas fa-home mr-3"></i> Burgos 666, Azul, Buenos Aires</p>
+                        <p><i class="fas fa-envelope mr-3"></i> alitapuga@yahoo.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> 02281431166</p>
+                        <p><i class="fas fa-print mr-3"></i> +542281601049</p>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Seguinos en las redes</h5>
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                            href="https://www.facebook.com/Joyeriayrelojeriapuga/" target="_blank" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+                            href="https://www.instagram.com/joyeria_puga/" target="_blank" role="button"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: transparent">
+            © 2022 Copyright:
+            <a class="text-black" target="_blank" href="https://github.com/CharlyCoderHouse">Andosoft</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- AGREGAMOS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- AGREGAMOS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

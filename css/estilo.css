@@ -1,0 +1,556 @@
+@charset "UTF-8";
+/* HOJA ESTILO SASS */
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* Formato para los títulos */
+.titulos, .subTitulos {
+  color: chocolate;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
+  margin: auto;
+  padding: 10px; }
+
+/* Formato para los SUB títulos */
+.subTitulos {
+  padding: 0; }
+
+/* reseteo margenes y padding predefinidos */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Le doy Fondo personalizados a las páginas */
+body {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(2,626,405)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23F9D34E'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.02'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Indie Flower", cursive; }
+
+/* BOTON DE WHATSAPP */
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+  /* Animacion al botón WHATSAPP */ }
+  .botonWhatsApp img:hover {
+    transform: translateX(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s; }
+
+/* Le doy color y tamaño al encabezado */
+.headerProyectoGrid {
+  height: 150px;
+  display: flex;
+  flex-direction: column; }
+
+/* Logo de la empresa tamaño */
+.imgLogo {
+  height: 100px;
+  width: 140px; }
+
+/* formato Barra Header */
+.colNavbar {
+  background-color: transparent;
+  text-align: center;
+  border-bottom: blanchedalmond solid 3px; }
+
+.fuentesNav {
+  color: #353535;
+  font-family: "Indie Flower", cursive;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none; }
+  .fuentesNav:hover {
+    color: #CE7D35;
+    transition: all .3s; }
+  .fuentesNav:focus {
+    color: #CE7D35; }
+
+.subMenu {
+  background: blanchedalmond;
+  border: none; }
+  .subMenu .fuentesNav:hover {
+    background-color: transparent; }
+
+/* Formato espaciado barra Nav */
+li {
+  margin: 5px;
+  padding: 5px; }
+
+/* CAJA CON IMAGEN Y ANIMACION */
+.portadaImagen {
+  background-image: url("../img/rosa_perlas.jpg");
+  background-size: cover;
+  height: calc(100vh - 100px); }
+
+/* CAJA ANIMADA */
+.cajaAnimada {
+  border-top: 2px solid #CE7D35;
+  border-radius: 4px;
+  height: 250px;
+  width: 500px;
+  margin: 30px;
+  position: absolute;
+  /* Centramos de forma simple */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: burlywood;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 10px 10px 10px;
+  opacity: 90%;
+  max-width: 90%; }
+  .cajaAnimada h2 {
+    color: #CE7D35;
+    font-weight: bold; }
+  .cajaAnimada p {
+    font-style: italic;
+    font-size: 20px; }
+
+/* Formato para botón Contacto */
+.botones {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  color: #fff;
+  background-image: linear-gradient(to right, blanchedalmond, #CE7D35); }
+  .botones:hover {
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+    /* Cubic-bezier = Es la curva de tiempo que usan todas las transiciones CSS */ }
+  .botones:active {
+    transform: translateY(3px); }
+
+/* Formato al main */
+main {
+  padding: 20px 5px 10px 5px; }
+
+/* Seccion del Index */
+.seccionInfo {
+  display: flex;
+  align-items: center;
+  padding: 30px; }
+
+/* Seccion del Index */
+.seccionInfo2 {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  flex-direction: row-reverse; }
+
+/* Formato a los textos */
+.textoIndex {
+  width: 75%;
+  margin: 10px;
+  text-align: justify;
+  align-content: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  color: #353535;
+  padding: 5px; }
+
+/* Formato a los textos */
+.texto {
+  width: 95%;
+  margin: 20px;
+  font-family: 'Indie Flower', cursive;
+  text-align: justify;
+  align-content: center;
+  font-size: 28px;
+  color: #353535;
+  padding: 5px; }
+
+/* formato a todas las imagenes de productos */
+.fotoProductos {
+  width: 300px;
+  height: 300px;
+  margin: 30px; }
+
+.cajaFoto {
+  height: auto;
+  width: 400px;
+  margin: 5px; }
+
+.fotos {
+  width: 100%;
+  height: 100%;
+  margin: 10px; }
+
+/* Estilo PAGE QUIEN_SOMOS */
+/* Le doy el ancho al formulario de contacto */
+.mainSomos {
+  padding: 20px 10px 10px 10px; }
+
+.historiaSomos {
+  margin: 10px; }
+
+.videos {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: #CE7D35 solid 1px;
+  box-shadow: 3px 3px 10px #CE7D35;
+  border-radius: 1rem;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .videos div {
+    margin: 10px; }
+
+/* Estilo PAGE PROMOCION */
+.cajaProductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: max-available;
+  margin: 15px;
+  border: 1px solid #CE7D35;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px #CE7D35; }
+
+/* CAJAS PRODUCTOS BOOTSTRAP */
+.card {
+  background: transparent;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  border: 0;
+  border-radius: 1rem; }
+  .card h5 {
+    overflow: hidden;
+    height: 56px;
+    font-weight: 900;
+    font-size: 1.5rem; }
+  .card h2 {
+    font-size: 1rem; }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+
+.card-img, .card-img-top {
+  border-top-left-radius: calc(1rem - 1px);
+  border-top-right-radius: calc(1rem - 1px); }
+
+.card-img-top {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  padding: 10px; }
+
+.label-top {
+  position: absolute;
+  background-color: #8bc34a;
+  color: #fff;
+  top: 8px;
+  right: 8px;
+  padding: 5px 10px 5px 10px;
+  font-size: .7rem;
+  font-weight: 600;
+  border-radius: 3px;
+  text-transform: uppercase; }
+
+.top-right {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 900;
+  background: #ff5722;
+  line-height: 90px;
+  text-align: center;
+  color: white; }
+  .top-right span {
+    display: inline-block;
+    vertical-align: middle; }
+
+.clearfix span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 900; }
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 900; }
+
+.modal-body p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600; }
+
+.btn {
+  font-weight: 900; }
+
+.secTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+/* Estilo PAGE PROMOCION */
+.secAnillos, .secRelojes, .secAccesorios, .secMarroqui {
+  padding: 10px; }
+
+/* Estilo PAGE CONTACTO */
+/* Le doy el ancho al formulario de contacto */
+#contacto {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #CE7D35;
+  border-radius: 4px;
+  padding: 10px; }
+  #contacto form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60vw; }
+
+.campo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px; }
+  .campo:focus {
+    box-shadow: 3px 3px 10px #CE7D35; }
+
+.campoAlto:focus {
+  height: 60px; }
+
+.botonesInput {
+  padding: 5px; }
+
+.botonContacto {
+  width: 150px;
+  max-width: 90%;
+  margin: auto;
+  border: none;
+  cursor: pointer; }
+
+.seccionUbicacion {
+  width: 100%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .seccionUbicacion div p {
+    text-align: center; }
+
+.cajaMap {
+  width: 100%;
+  max-width: 560px;
+  height: 415px;
+  max-height: 415px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .cajaMap iframe {
+    width: 100%;
+    height: 100%; }
+
+/* Formato al pie */
+.footerProyecto {
+  border-top: blanchedalmond solid 3px;
+  font-family: "Roboto", sans-serif; }
+
+/* APLICAMOS GRID AREA AL INDEX*/
+.bodyProyectoGrid {
+  display: grid;
+  grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer"; }
+
+.headerProyectoGrid {
+  grid-area: header; }
+
+.mainIndexGrid {
+  grid-area: cuerpo; }
+
+.footerProyectoGrid {
+  grid-area: footer; }
+
+/* APLICAMOS GRID AREA AL QUIEN_SOMOS*/
+.bodyProyectoGrid {
+  display: grid;
+  grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer"; }
+
+.headerProyectoGrid {
+  grid-area: header; }
+
+.mainSomos {
+  grid-area: cuerpo; }
+
+.footerProyectoGrid {
+  grid-area: footer; }
+
+/* APLICAMOS GRID AREA AL PROMOCION*/
+.bodyProyectoGrid {
+  display: grid;
+  grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer"; }
+
+.headerProyectoGrid {
+  grid-area: header; }
+
+.mainPromocion {
+  grid-area: cuerpo; }
+
+.footerProyectoGrid {
+  grid-area: footer; }
+
+/* APLICAMOS GRID AREA AL PRODUCTOS*/
+.bodyProyectoGrid {
+  display: grid;
+  grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer"; }
+
+.headerProyectoGrid {
+  grid-area: header; }
+
+.mainProductos {
+  grid-area: cuerpo; }
+
+.footerProyectoGrid {
+  grid-area: footer; }
+
+/* APLICAMOS GRID AREA A CONTACTO*/
+.bodyProyectoGrid {
+  display: grid;
+  grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer"; }
+
+.headerProyectoGrid {
+  grid-area: header; }
+
+.mainContactoGrid {
+  grid-area: cuerpo; }
+
+.footerProyectoGrid {
+  grid-area: footer; }
+
+/* DISEÑO RESPONSIVE */
+/* APLICAMOS MEDIAS QUERIES */
+@media screen and (max-width: 440px) {
+  .contenedorVideo {
+    width: 250px;
+    height: 150px; }
+  .cajaFoto {
+    height: auto;
+    width: 280px;
+    padding: 5px; } }
+
+@media screen and (max-width: 768px) {
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(210,105,30, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  .custom-toggler.navbar-toggler {
+    border-width: 2px;
+    border-color: #CE7D35;
+    opacity: 90%; }
+  .contenedorVideo {
+    max-width: 400px; }
+  .card h5 {
+    font-size: 1rem; }
+  .card h2 {
+    font-size: .8rem; }
+  li {
+    text-align: center;
+    margin: 2px;
+    padding: 2px; }
+  .subMenu {
+    background: transparent;
+    border: none; }
+  .textoIndex {
+    text-align: center;
+    align-content: center;
+    font-size: 20px; }
+  .texto {
+    text-align: center;
+    align-content: center;
+    font-size: 20px; } }
+
+@media screen and (max-width: 991px) {
+  /* Main general Paddings */
+  main {
+    padding: 15px 2px 5px 2px; }
+  .bodyProyectoGrid {
+    display: grid;
+    grid-template-areas: ". . header" "cuerpo cuerpo cuerpo" "footer footer footer"; }
+  .cajaAnimada {
+    position: relative;
+    top: 150px; }
+  /* Header lo achico */
+  .headerProyectoGrid {
+    height: 75px;
+    /* Oculto titulos */ }
+    .headerProyectoGrid .titulos, .headerProyectoGrid .subTitulos {
+      display: none; }
+  /* Formato a los textos */
+  .textoIndex {
+    text-align: center;
+    align-content: center;
+    font-size: 20px; }
+  .texto {
+    text-align: center;
+    align-content: center;
+    font-size: 20px; }
+  /* Centro el logo de la empresa */
+  .imgLogo img {
+    height: 80px;
+    width: 110px; }
+  /* Achico el borde del menú navegador */
+  .menuNav {
+    width: 400px;
+    margin: 15px 10px 0px 0px;
+    border-bottom: blanchedalmond solid 3px; }
+  .menuPrincipal li a {
+    display: block;
+    padding: 5px 5px;
+    color: #353535;
+    font-size: 10px;
+    text-decoration: none; }
+  .subMenuPrincipal li {
+    display: none; }
+  /* Seeciones del INDEX */
+  .seccionInfo, .seccionInfo2 {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center; }
+  /* PAGE QUIEN_SOMOS */
+  .videos {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around; }
+  /* PAGE PROMOCION/PRODUCTOS */
+  .cajaProductos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around; }
+  /* PAGE CONTACTO */
+  #contacto {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* border: none; */ }
+  .campo {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; } }

@@ -1,0 +1,89 @@
+  /* APLICAMOS GRID AREA AL INDEX*/
+  .bodyProyectoGrid {
+    display: grid;
+    grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer";
+  }
+  
+  .headerProyectoGrid {
+    grid-area: header;
+  }
+  
+  .mainIndexGrid {
+    grid-area: cuerpo;
+  }
+  
+  .footerProyectoGrid {
+    grid-area: footer;
+  }
+  
+  /* APLICAMOS GRID AREA AL QUIEN_SOMOS*/
+  .bodyProyectoGrid {
+    display: grid;
+    grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer";
+  }
+  
+  .headerProyectoGrid {
+    grid-area: header;
+  }
+  
+  .mainSomos {
+    grid-area: cuerpo;
+  }
+  
+  .footerProyectoGrid {
+    grid-area: footer;
+  }
+  
+  /* APLICAMOS GRID AREA AL PROMOCION*/
+  .bodyProyectoGrid {
+    display: grid;
+    grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer";
+  }
+  
+  .headerProyectoGrid {
+    grid-area: header;
+  }
+  
+  .mainPromocion {
+    grid-area: cuerpo;
+  }
+  
+  .footerProyectoGrid {
+    grid-area: footer;
+  }
+  
+  /* APLICAMOS GRID AREA AL PRODUCTOS*/
+  .bodyProyectoGrid {
+    display: grid;
+    grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer";
+  }
+  
+  .headerProyectoGrid {
+    grid-area: header;
+  }
+  
+  .mainProductos {
+    grid-area: cuerpo;
+  }
+  
+  .footerProyectoGrid {
+    grid-area: footer;
+  }
+  
+  /* APLICAMOS GRID AREA A CONTACTO*/
+  .bodyProyectoGrid {
+    display: grid;
+    grid-template-areas: "header header header" "cuerpo cuerpo cuerpo" "footer footer footer";
+  }
+  
+  .headerProyectoGrid {
+    grid-area: header;
+  }
+  
+  .mainContactoGrid {
+    grid-area: cuerpo;
+  }
+  
+  .footerProyectoGrid {
+    grid-area: footer;
+  }

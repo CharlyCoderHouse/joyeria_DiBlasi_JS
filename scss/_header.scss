@@ -1,0 +1,54 @@
+ /* Le doy color y tamaño al encabezado */
+  .headerProyectoGrid {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Logo de la empresa tamaño */
+  
+  .imgLogo {
+    height: 100px;
+    width: 140px;
+  }
+  
+  /* formato Barra Header */
+  
+  .colNavbar {
+    background-color: transparent;
+    text-align: center;
+    border-bottom: $color_headers solid 3px;
+  }
+  
+  .fuentesNav {
+    color: #353535;
+    font-family: $estilo_fuente;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+  
+    &:hover {
+      color: $color_titulos;
+      transition: all .3s;
+    }
+  
+    &:focus {
+      color: $color_titulos;
+    }
+  }
+  
+  .subMenu {
+    background: $color_headers;
+    border: none;
+  
+    .fuentesNav:hover {
+      background-color: transparent;
+    }
+  }
+  
+  /* Formato espaciado barra Nav */
+  
+  li {
+    margin: 5px;
+    padding: 5px;
+  }

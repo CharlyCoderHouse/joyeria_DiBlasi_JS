@@ -1,0 +1,31 @@
+// MAPS 
+$fuentesEstilo:(color: chocolate, alineado: center, fuente: $estilo_fuente);
+
+// EXTEND
+ 
+  /* Formato para los títulos */
+  .titulos {
+    color: map-get($fuentesEstilo,color);
+    text-align: map-get($fuentesEstilo, alineado);
+    font-family: map-get($fuentesEstilo, fuente);
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* Formato para los SUB títulos */
+  .subTitulos {
+    @extend .titulos;
+    padding: 0;
+  }
+  
+ 
+// MIXIN 
+
+@mixin seccionInex {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}

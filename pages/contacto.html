@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esperamos tu contacto o Veni a conocernos ! Te estamos esperando. 
+                ¡ Entra, conocenos y te invitamos a consultarnos, que con mucho gusto vamos a asesorarte !">
+    <!-- El titulo cambia con cada entrega -->
+    <title>Joyería PUGA - Contacto</title>
+    <!-- Logo de la empresa -->
+    <link rel="shortcut icon" href="../img/Logo_Puga.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Hoja de estilo propia-->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- AGREGO LINKS PARA ANIMACIONES INDEX Y CONTACTO -->
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5e96413f29.js" crossorigin="anonymous"></script>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Encabezado con boostrap -->
+    <header>
+        <nav class="navbar navbar-expand-md colNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="imgLogo" src="../img/Logo_Puga.png"
+                        alt="Joyeria_Puga"></a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="quien_somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="promocion.html">Promociones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fuentesNav" href="productos.html"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu subMenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item fuentesNav" href="productos.html#Anillo">Anillos</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="productos.html#Relojes">Relojes</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="productos.html#Accesorios">Accesorios</a>
+                                </li>
+                                <li><a class="dropdown-item fuentesNav"
+                                        href="productos.html#Marroquineria">Marroquinería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fuentesNav" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mainContactoGrid">
+        <h1 class="titulos">Aquí podemos encontrarnos</h1>
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <form class="formulario">
+                <h2 class="subTitulos">Formulario de Contacto</h2>
+                <div class="contenedorInput">
+                    <input class="campo campoAlto" type="text" placeholder="Ingrese su nombre">
+                    <input class="campo campoAlto" type="text" placeholder="Ingrese su apellido">
+                    <input class="campo campoAlto" type="email" placeholder="Ingrese su email">
+                </div>
+                <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
+                    placeholder="Ingrese su mensaje"></textarea>
+                <div class="botonesInput">
+                    <input class="botones botonContacto" type="submit">
+                    <input class="botones botonContacto" type="reset">
+                </div>
+            </form>
+            <!-- Ubicación  -->
+            <div class="seccionUbicacion">
+                <div>
+                    <h2 class="subTitulos">Te esperamos</h2>
+                    <p><strong>Burgos 666 - Azul - Buenos Aires
+                            - Tel: 02281431166</strong> </p>
+                </div>
+                <div class="cajaMap">
+                    <iframe width="560" height="315"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798.9152408306163!2d-59.863212890958984!3d-36.77870005769315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959427754e2a0fb1%3A0x879d1a995ef28989!2sJoyer%C3%ADa%20Puga!5e0!3m2!1ses!2sar!4v1650068308962!5m2!1ses!2sar"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="botonWhatsApp">
+        <img src="../img/logoWhatsapp.png" alt="Boton_Whatsapp">
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-black footerProyecto" style="background-color: transparent">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">
+                            Joyería y Relojería PUGA
+                        </h5>
+                        <p>
+                            Articulos de Joyería, Relojería, Marroquinería, Cuchillos, Mates y Bombillas. Diseños de
+                            Joyas exclusivos!!! Te esperamos !
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+                        <p><i class="fas fa-home mr-3"></i> Burgos 666, Azul, Buenos Aires</p>
+                        <p><i class="fas fa-envelope mr-3"></i> alitapuga@yahoo.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> 02281431166</p>
+                        <p><i class="fas fa-print mr-3"></i> +542281601049</p>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Seguinos en las redes</h5>
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                            href="https://www.facebook.com/Joyeriayrelojeriapuga/" target="_blank" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+                            href="https://www.instagram.com/joyeria_puga/" target="_blank" role="button"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: transparent">
+            © 2022 Copyright:
+            <a class="text-black" target="_blank" href="https://github.com/CharlyCoderHouse">Andosoft</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- AGREGAMOS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- AGREGAMOS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
