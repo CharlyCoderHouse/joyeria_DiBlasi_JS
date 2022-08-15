@@ -70,10 +70,17 @@
                         <li class="nav-item">
                             <a class="nav-link fuentesNav" href="pages/contacto.html">Contactanos</a>
                         </li>
+                        <li class="nav-item">
+                            <div id="incioBoton"></div>                                                  
+                        </li>
+                        <li class="nav-item">
+                            <div id="abrirCarrito"></div>   
+                        </li>     
                     </ul>
                 </div>
             </div>
         </nav>
+        <div id="textUser"></div> 
     </header>
     <main class="mainIndexGrid">
         <!-- Carousel Bootstrap -->
@@ -155,6 +162,73 @@
         </section>
     </main>
 
+    <main class="mainProductos" id="producto-contenedor">
+        <!-- Se genera distintas anclas para cada sección de productos -->
+        <!-- Cajas Bootstrap para tienda-->
+        <!-- Se generan por JS -->
+
+        <!-- MODAL PARA MOSTRAR EL CARRITO -->
+        <div class="modal fade" id="modal-Carrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Carrito en preparación</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+        
+                    <h3>Detalle</h3>
+                    <div id="carrito-contenedor"></div>
+                    <h4 id=elTotal>Total: $ 0.00</h4>
+        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="cerrar" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                    </button>
+                    <button type="button" id="finalizar" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modalFinalizar">
+                    Finalizar
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL PARA MOSTRAR LA FINALIZACION DEL PEDIDO -->
+        <div class="modal fade" id="modalFinalizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" id="tituloModal">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modalFinal" class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" id="cierrePedido" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <section id="logueoContenedor">
+            <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="login" id="logeo">
+                            <div class="login-triangle"></div>
+                            <h2 class="login-header">Ingresar</h2>            
+                            <form class="login-container" id="formLogin">
+                                <p><input type="text" id="userIn" name="users" placeholder="Usuario"></p>
+                                <p><input type="submit" id="ingreso" value="Aceptar"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+    </main>
+
     <div class="botonWhatsApp">
         <img src="img/logoWhatsapp.png" alt="Boton_Whatsapp">
     </div>
@@ -217,10 +291,6 @@
     </footer>
     <!-- Footer -->
 
-
-    <!-- AGREGAMOS JAVASCRIPT -->
-    <script src="JS/index.js"></script>
-
     <!-- AGREGAMOS AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -228,6 +298,13 @@
         AOS.init();
     </script>
 
+    <!-- AGREGAMOS JAVASCRIPT -->
+    <script src="JS/index.js"></script>
+    <script src="JS/productos.js" type="module"></script>
+    <script src="JS/carritoIndex.js" type="module"></script>
+    <script src="JS/app.js" type="module"></script>
+    <script src="JS/modal.js" type="module"></script>
+    
     <!-- AGREGAMOS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

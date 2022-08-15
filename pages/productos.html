@@ -23,8 +23,8 @@
 
 <body>
     <!-- Encabezado con boostrap -->
-    <header>
-        <nav class="navbar navbar-expand-md colNavbar">
+    <header> 
+        <nav class="navbar navbar-expand-lg colNavbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="imgLogo" src="../img/Logo_Puga.png"
                         alt="Joyeria_Puga"></a>
@@ -60,739 +60,82 @@
                         <li class="nav-item">
                             <a class="nav-link fuentesNav" href="contacto.html">Contactanos</a>
                         </li>
+                        <li class="nav-item">
+                            <div id="incioBoton"></div>                                                  
+                        </li>
+                        <li class="nav-item">
+                            <div id="abrirCarrito"></div>   
+                        </li>      
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </div> 
+        </nav>   
+        <div id="textUser"></div> 
     </header>
-    <main class="mainProductos">
+    <main class="mainProductos" id="producto-contenedor">
         <!-- Se genera distintas anclas para cada sección de productos -->
         <!-- Cajas Bootstrap para tienda-->
-        <section class="secAnillos">
-            <h1 class="titulos" id="Anillos">Anillos</h1>
-            <nav class="texto">
-                Todos los anillos que queres están aquí y el anillo que soñas... también lo hacemos, consultanos y lo
-                hacemos realidad.
-            </nav>
+        <!-- Se generan por JS -->
 
-            <div class="cajaProductos">
-                <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Anillo1_.png" alt="Anillo_PlataOro">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-start badge rounded-pill bg-primary">Oferta!</span>
-                                        <span class="float-end badge rounded-pill bg-success">$ 999.-</span>
-                                    </div>
-                                    <h5 class="card-title">Anillo circular Diamante</h5>
+        <!-- MODAL PARA MOSTRAR EL CARRITO -->
+        <div class="modal fade" id="modal-Carrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Carrito en preparación</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+        
+                    <h3>Detalle</h3>
+                    <div id="carrito-contenedor"></div>
+                    <h4 id=elTotal>Total: $ 0.00</h4>
+        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="cerrar" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                    </button>
+                    <button type="button" id="finalizar" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modalFinalizar">
+                    Finalizar
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
 
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Muy buena elección!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Anillo de plata y diamantes, compralo hasta en 12 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Anillo2_.png" alt="Anillo_curvo">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 2.499.-</span>
-                                    </div>
-                                    <h5 class="card-title">Anillo Mariposas</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop2">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Muy buena elección!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Anillo de mariposas y detalles en color violeta, compralo hasta en 12 cuotas.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Anillo3_.png" alt="Anillo_especial">
-                                <div class="label-top shadow-sm">Bronce</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 1.499.-</span>
-                                    </div>
-                                    <h5 class="card-title">Anillo Bronce</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop3">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Muy buena elección!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Anillo de Bronce, compralo hasta en 12 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Anillo4_.png" alt="Anillo_corazones">
-                                <div class="label-top shadow-sm">Oportunidad</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 1.999.-</span>
-                                    </div>
-                                    <h5 class="card-title">Anillo Corazones</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop4">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- MODAL PARA MOSTRAR LA FINALIZACION DEL PEDIDO -->
+        <div class="modal fade" id="modalFinalizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" id="tituloModal">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Muy buena elección!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Anillo de corazones, especial para enamorados, compralo hasta en 12 cuotas.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="modal">Confirmar</button>
-                                </div>
-                            </div>
+                    <div id="modalFinal" class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" id="cierrePedido" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <section id="logueoContenedor">
+            <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="login" id="logeo">
+                            <div class="login-triangle"></div>
+                            <h2 class="login-header">Ingresar</h2>            
+                            <form class="login-container" id="formLogin">
+                                <p><input type="text" id="userIn" name="users" placeholder="Usuario"></p>
+                                <p><input type="submit" id="ingreso" value="Aceptar"></p>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="secRelojes">
-            <div class="secTop">
-                <h2 class="titulos" id="Relojes">Relojes</h2>
-                <a href=#><i class="fa-solid fa-house fuentesNav"></i></a>
-            </div>
-            <nav class="texto">
-                Tenemos una gran variedad de relojes, desde los antiguos hasta los mas modernos y teconológicos. También
-                contamos con relojes de pared y pie. Compra con la garantía del conocimiento de nuestro maestro
-                relojero.
-            </nav>
-            <div class="cajaProductos">
-                <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/reloj_dam_a.png" alt="Reloj_dama">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-start badge rounded-pill bg-primary">Oferta!</span>
-                                        <span class="float-end badge rounded-pill bg-success">$ 3.499.-</span>
-                                    </div>
-                                    <h5 class="card-title">Smart Watch Time Cuadrado</h5>
-
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropR1">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropR1" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">A la hora señalada!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Smart Watch con compatibilidad Android, compralo hasta en 12 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/reloj_homb_a.png" alt="Reloj_Hombre">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 4.299.-</span>
-                                    </div>
-                                    <h5 class="card-title">Smart Watch Time Circular</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropR2">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropR2" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">A la hora señalada!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Smart Watch circular, compatibilidad Android/Ios, compralo hasta en 12
-                                            cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/reloj_nino_a.png" alt="Reloj_Nenes">
-                                <div class="label-top shadow-sm">Niños</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 999.-</span>
-                                    </div>
-                                    <h5 class="card-title">Reloj digital niños</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropR3">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropR3" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">A la hora señalada!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>El primer reloj para los más pequeños, compralo hasta en 12 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/reloj_depor_a.png" alt="Reloj_deportivo">
-                                <div class="label-top shadow-sm">Fitness</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 5.999.-</span>
-                                    </div>
-                                    <h5 class="card-title">Reloj Fitness</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropR4">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdropR4" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">A la hora señalada!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Reloj con cronometro, especial para Runners, compralo hasta en 12 cuotas.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="modal">Confirmar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="secAccesorios">
-            <div class="secTop">
-                <h2 class="titulos" id="Accesorios">Accesorios</h2>
-                <a href=#><i class="fa-solid fa-house fuentesNav"></i></a>
-            </div>
-            <nav class="texto">
-                Nuestros accesorios en joyería, tenemos dijes y anillos creados desde tu imaginación, contanos que
-                imaginas para tu collar, pulsera o anillo y lo convertimos en realidad.
-            </nav>
-            <div class="cajaProductos">
-                <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Joyeria1_a.png" alt="Dije_dama">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-start badge rounded-pill bg-primary">Oferta!</span>
-                                        <span class="float-end badge rounded-pill bg-success">$ 499.-</span>
-                                    </div>
-                                    <h5 class="card-title">Dije simple con cadena</h5>
-
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropA1">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropA1" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Ya casi es tuyo!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Dije simple con cadena a elección, compralo hasta en 3 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Dije5_a.png" alt="Dije_piedra">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 2.199.-</span>
-                                    </div>
-                                    <h5 class="card-title">Dije especial Piedras</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropA2">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropA2" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Ya casi es tuyo!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Dije con piedras preciosas de diferentes colores, compralo hasta en 3 cuotas.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Aros1_a.png" alt="Aros_plata">
-                                <div class="label-top shadow-sm">Especial</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 1.899.-</span>
-                                    </div>
-                                    <h5 class="card-title">Aros personalizados Corazón</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropA3">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropA3" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Ya casi es tuyo!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Aros que no encontraras en otro lado, compralo hasta en 3 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/Pulseras1_a.png" alt="Pulseras_dama">
-                                <div class="label-top shadow-sm">Unicas</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 1.999.-</span>
-                                    </div>
-                                    <h5 class="card-title">Pulseras dama Plata</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropA4">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdropA4" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Ya casi es tuyo!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Pulseras Plata para la dama, únicas en el mercado, compralo hasta en 3 cuotas.
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="modal">Confirmar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="secMarroqui">
-            <div class="secTop">
-                <h2 class="titulos" id="Marroquineria">Marroquinería</h2>
-                <a href=#><i class="fa-solid fa-house fuentesNav"></i></a>
-            </div>
-            <nav class="texto">
-                Y no puede faltar la marroquinería, para guardar y llevar lo que necesitas con el mejor estilo.
-            </nav>
-            <div class="cajaProductos">
-                <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-                    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/marroqui1_a.png" alt="Cartera_Negra">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-start badge rounded-pill bg-primary">Oferta!</span>
-                                        <span class="float-end badge rounded-pill bg-success">$ 3.199.-</span>
-                                    </div>
-                                    <h5 class="card-title">Bolso Negro</h5>
-
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropM1">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropM1" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Es lo que buscabas!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Bolso cuero negro, para todos los días, compralo hasta en 6 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/marroqui2_a.png" alt="Cartera_Marron">
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 4.699.-</span>
-                                    </div>
-                                    <h5 class="card-title">Cartera Marrón Boutique</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropM2">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropM2" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Es lo que buscabas!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Cartera Marron, especial para salidas, compralo hasta en 6 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/marroqui3_a.png" alt="Cartera_Cuero_Negra">
-                                <div class="label-top shadow-sm">Oportunidad</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 2.699.-</span>
-                                    </div>
-                                    <h5 class="card-title">Cartera Cuero Negra</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropM3">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropM3" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Es lo que buscabas!</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Cartera de cuero negro, combina con todo, compralo hasta en 6 cuotas.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-warning"
-                                            data-bs-dismiss="modal">Confirmar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm">
-                                <img class="card-img-top" src="../img/bolso_maquillaje_a.png" alt="Bolsos_maquillaje">
-                                <div class="label-top shadow-sm">Especial</div>
-                                <div class="card-body">
-                                    <div class="clearfix mb-3">
-                                        <span class="float-end badge rounded-pill bg-success">$ 4.999.-</span>
-                                    </div>
-                                    <h5 class="card-title">Bolso profesional maquillaje</h5>
-                                    <div class="text-center my-4">
-                                        <!-- Botón Modal Carrito -->
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdropM4">
-                                            Agregar al Carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdropM4" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Es lo que buscabas!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Bolso para las profesionales del maquillaje, compralo hasta en 6 cuotas.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="button" class="btn btn-warning"
-                                        data-bs-dismiss="modal">Confirmar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section>  
 
     </main>
 
@@ -857,6 +200,15 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- AGREGAMOS JAVASCRIPT -->
+    <script src="../JS/index.js"></script>
+    <script src="../JS/productos.js" type="module"></script>
+    <script src="../JS/carritoIndex.js" type="module"></script>
+    <script src="../JS/app.js" type="module"></script>
+    <script src="../JS/modal.js" type="module"></script>
 
     <!-- AGREGAMOS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

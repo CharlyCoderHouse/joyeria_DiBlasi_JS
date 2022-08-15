@@ -55,10 +55,12 @@ body {
   width: 140px; }
 
 /* formato Barra Header */
+header {
+  border-bottom: blanchedalmond solid 3px; }
+
 .colNavbar {
   background-color: transparent;
-  text-align: center;
-  border-bottom: blanchedalmond solid 3px; }
+  text-align: center; }
 
 .fuentesNav {
   color: #353535;
@@ -82,6 +84,99 @@ body {
 li {
   margin: 5px;
   padding: 5px; }
+
+/* LOGIN */
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px; }
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #f8d676; }
+
+.login-header {
+  background: #f8d676;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff; }
+
+.login-container {
+  background: transparent;
+  padding: 12px; }
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px; }
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em; }
+
+.login input[type="text"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555; }
+
+/* Text fields' focus effect */
+.login input[type="text"]:focus {
+  border-color: #888; }
+
+.login input[type="submit"] {
+  background: #f8d676;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer; }
+
+.login input[type="submit"]:hover {
+  background: chocolate; }
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: chocolate; }
+
+#textUser {
+  color: #353535;
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 1px; }
+
+.productoEnCarrito {
+  border-left: 5px solid chocolate;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: justify; }
+
+#elTotal {
+  padding: 2px;
+  margin-left: 1%; }
 
 /* CAJA CON IMAGEN Y ANIMACION */
 .portadaImagen {
