@@ -23,6 +23,7 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "sweetalert2": "^11.4.26"
   }
 }
