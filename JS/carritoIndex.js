@@ -62,7 +62,7 @@ export const carritoIndex = (productoId) => {
         // actualizo sessiom storage
         localStorage.setItem("carritoProdu", JSON.stringify(carritoCompras));
         
-        const ToastIng = Swal.mixin({
+/*         const ToastIng = Swal.mixin({
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
@@ -78,7 +78,7 @@ export const carritoIndex = (productoId) => {
             icon: 'success',
             title: 'Ingreso al pedido'
           })
-
+ */
     }
 
     renderProductoCarrito();

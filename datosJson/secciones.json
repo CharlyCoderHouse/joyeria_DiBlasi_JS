@@ -2,5 +2,6 @@
     {"id": 1, "nombre": "secAnillos", "titulo": "Anillos", "desc": "Todos los anillos que queres están aquí y el anillo que soñas... también lo hacemos, consultanos y lo hacemos realidad."},
     {"id": 2, "nombre": "secRelojes", "titulo": "Relojes", "desc": "Tenemos una gran variedad de relojes, desde los antiguos hasta los mas modernos y teconológicos. También contamos con relojes de pared y pie. Compra con la garantía del conocimiento de nuestro maestro relojero."},	
     {"id": 3, "nombre": "secAccesorios", "titulo": "Accesorios", "desc": "Nuestros accesorios en joyería, tenemos dijes y anillos creados desde tu imaginación, contanos que imaginas para tu collar, pulsera o anillo y lo convertimos en realidad."},		
-    {"id": 4, "nombre": "secMarroqui", "titulo": "Marroquineria", "desc": "Y no puede faltar la marroquinería, para guardar y llevar lo que necesitas con el mejor estilo."}
+    {"id": 4, "nombre": "secMarroqui", "titulo": "Marroquineria", "desc": "Y no puede faltar la marroquinería, para guardar y llevar lo que necesitas con el mejor estilo."},
+    {"id": 5, "nombre": "secPromociones", "titulo": "Promociones", "desc": "En esta sección puedes encontrar las promociones que mes a mes iremos subiendo para aprovechar y darte un gusto. Anillos, cadenas personalizadas, relojes, marroquinería y más te están esperando, acá al mejor precio."}
 ]

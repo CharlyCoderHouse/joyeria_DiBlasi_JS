@@ -1,17 +1,17 @@
-/* import {
-    verificoStorage
-  } from "./app.js"; */
-  import {
-    mostrarProductos
-  } from "./app.js";
-  
-  import {
-    mostrarSeccion
-  } from "./app.js";
-  
-  // IDENTIFICO EN QUE PAGINA ESTOY
-const myURLsplitted = location.href.split("/")
-const myPage=myURLsplitted.pop();
+
+import {verificoStorage} from "./app.js";
+import {mostrarSeccion} from "./app.js";
+import {mostrarSeccionPromo} from "./app.js";
+import {mostrarProductos} from "./app.js";
+import {mostrarProductosPromo} from "./app.js";
+
+// IDENTIFICO EN QUE PAGINA ESTOY
+const myURLsplitted = location.href.split("/");
+var myPage = myURLsplitted.pop();
+const getPathFromUrl = (myURL) => {
+    return myURL.replace(/(\?.*)|(#.*)/g, "")
+}
+myPage=getPathFromUrl(myPage);
 
   // CLASE PARA DEFINIR Las SECCIONES de PRODUCTOS
   class Secciones {
@@ -62,9 +62,12 @@ const myPage=myURLsplitted.pop();
           });
   
         // ARMO LAS CARDS PARA MOSTRAR LOS PRODUCTOS
-        if(myPage==="productos.html"){
+        if(myPage === "productos.html"){
             mostrarSeccion(secProd);
-        }          
+        }
+        if (myPage === "promocion.html"){
+            mostrarSeccionPromo(secProd);
+        }
   
         } catch (error) {
           console.log("error:"+error);
@@ -94,11 +97,14 @@ const myPage=myURLsplitted.pop();
           });
   
         // ARMO LAS CARDS PARA MOSTRAR LOS PRODUCTOS
-        if(myPage==="productos.html"){
+        if(myPage === "productos.html"){
             mostrarProductos(productos);
-            verificoStorage();
         }              
-      
+        if (myPage === "promocion.html"){
+            mostrarProductosPromo(productos);
+        }
+        verificoStorage();
+
         } catch (error) {
           console.log("error:"+error);
         }
